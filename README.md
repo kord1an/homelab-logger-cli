@@ -21,17 +21,27 @@ As a homelab operator, I often found myself fixing a complex issue (like a Proxm
 
 ## 🛠️ Installation
 
-1. Clone the repository to a specific location (e.g., your home directory):
-   # The destination folder ~/.homelab-logger-cli is specified at the end
-   git clone https://github.com/kord1an/homelab-logger-cli.git ~/.homelab-logger-cli
+### Step 1: Clone the repository
 
-2. Source the script in your `.bashrc` or `.zshrc`:
-   # This path matches the clone location above
-   echo 'source ~/.homelab-logger-cli/hl.sh' >> ~/.bashrc
+Clone the tool to your home directory (hidden folder recommended).
 
-3. Configure your log directory (optional):
-   The default log location is `~/homelab-logs`. 
-   To change it, edit `~/.homelab-logger-cli/hl.sh` and update the `HL_LOG_DIR` variable.
+```bash
+git clone https://github.com/kord1an/homelab-logger-cli.git ~/.homelab-logger-cli
+```
+
+### Step 2: Enable in Shell
+Add the source command to your configuration file (`.bashrc` or `.zshrc`) to load it automatically.
+
+```bash
+echo 'source ~/.homelab-logger-cli/hl.sh' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Step 3: Configuration (Optional)
+The default log location is `~/homelab-logs`.
+To change it, edit `~/.homelab-logger-cli/hl.sh` and update the `HL_LOG_DIR` variable.
+
+
 
 ## 📖 Usage
 
