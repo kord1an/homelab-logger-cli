@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs (prevent committing test logs if they land here)
+*.log
+*.md
+!README.md
+!LICENSE
+
